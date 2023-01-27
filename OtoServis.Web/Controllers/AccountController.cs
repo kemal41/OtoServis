@@ -1,13 +1,13 @@
-﻿using IdentitySample.Models;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using OtoServis.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace IdentitySample.Controllers
+namespace OtoServis.Controllers
 {
     [Authorize]
     public class AccountController : Controller
@@ -16,7 +16,7 @@ namespace IdentitySample.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace IdentitySample.Controllers
+namespace OtoServis.Controllers
 {
     public class HomeController : Controller
     {
@@ -29,7 +29,6 @@ namespace IdentitySample.Controllers
 
         public ActionResult Deneme()
         {
-
             return View();
         }
     }

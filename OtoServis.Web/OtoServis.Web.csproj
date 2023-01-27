@@ -165,6 +165,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\dashboard.css" />
+    <Content Include="Content\sidebars.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="img\Hakkımızda\hakkımızda.jpg" />
@@ -214,6 +215,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\sidebars.js" />
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\UsersAdmin\Index.cshtml" />
@@ -266,6 +268,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
+    <Compile Include="Controllers\Web\SliderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -280,6 +283,7 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Slider\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -289,6 +293,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OtoServis.BL\OtoServis.BL.csproj">
+      <Project>{0986cf53-4ab8-4b49-9d35-c39a0872ad44}</Project>
+      <Name>OtoServis.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtoServis.Entities\OtoServis.Entities.csproj">
+      <Project>{1a1ba6e1-f5d7-4e97-bc91-8820e23bb4a5}</Project>
+      <Name>OtoServis.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
