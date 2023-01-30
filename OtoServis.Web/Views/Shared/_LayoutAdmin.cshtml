@@ -37,7 +37,7 @@
                             <div class="collapse" id="home-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li class="nav-item"><a href="/Slider" class="nav-link">Slider</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Overview2</a></li>
+                                    <li class="nav-item"><a href="/Kampanya/" class="nav-link">Kampanya</a></li>
                                  
                                 </ul>
                             </div>
@@ -63,7 +63,8 @@
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">@ViewBag.Title</h1>
                         <div class="btn-toolbar mb-2 mb-md-0">
-
+                            <span class="text-success fw-bold">@TempData["Ok"]</span>
+                            <span class="text-danger fw-bold">@TempData["No"]</span>
                         </div>
                     </div>
                     <div class="container">
